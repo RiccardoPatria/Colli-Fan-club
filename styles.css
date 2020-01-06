@@ -1,0 +1,54 @@
+h1 {
+  font-style: italic;
+  margin-left: 120px;
+  margin-block-end: 5px;
+  font-size: 50px;
+}
+
+body {
+  background-color: #ffffcc;
+}
+
+h3 {
+  margin-left: 100px;
+  margin-block-start: 5px;
+  font-size: 30px;
+}
+
+img.immaginesinistra {
+	margin-left: 40px;
+}
+
+p {
+	font-size: 25px;
+}
+
+p.testovita {
+	margin-left: 300px;
+}
+
+h4 {
+	margin-left: 300px;
+	font-size: 40px;
+	margin-block-end: 0px;
+}
+
+div {
+	margin-bottom: 200px;
+}
+
+a {	
+	margin-left: 50px;
+}
+
+p.testohome {
+	margin-left: 440px;
+}
+
+iframe {	
+	margin-left: 50px;
+}
+
+.testoinno {
+	margin-left: 30px;
+}
