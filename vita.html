@@ -1,58 +1,105 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<title>Tommaso Colli La Vita</title>
-	<link rel="stylesheet" href="styles.css" type="text/css">
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
-	<h1>Tommaso Colli -  La Vita</h1>
-	<h3>Un uomo, una leggenda, un eroe, un Dio, un Colli</h3>
-	<nav class="navbar navbar-light" style="background-color: #cca300;">
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    		<ul class="navbar-nav mr-auto">
-      			<li class="nav-item active">
-        			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link" href="#">Link</a>
-      			</li>
-      		</ul>
-    		<form class="form-inline my-2 my-lg-0">
-      			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-     			 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    		</form>
-  		</div>
-	</nav>
-	<br>
-	<br>
-	<div>
-		<img src="https://i.pinimg.com/474x/95/c8/7c/95c87c38a6aab7b56f7b46036dbe7aa7.jpg" alt="Madonna e Colli" width= 240 class="immaginesinistra" align=left >
-		<h4> Nascita </h4>
-		<p class="testovita">Al tempo di Erode, a Betlemme, in Giudea, nasce Tommaso Colli, primo di tre figli, dalla madre Maria e dallo Spirito Santo (immagine a lato di Tommaso Colli in giovane età in braccio alla madre). Lo stesso giorno tre magi vennero a portare dei doni al piccolo: Corsini portò i panini, Farioli il consenso popolare e Montanari gli appunti di latino. La leggenda narra che il luogo della nascita fu una piccola stalla, riscaldata solo da una lince e un hovawart Salud. E' facile immaginare il significato di una nascita così povera, che preannunciava per contrarietà le ricchezze della sua futura vita.
-		</p>
-	</div>
-	<div>
-		<img src="http://www.correrenelverde.it/cultura/images/personaggi/giulio_cesare.JPG" alt="Giulio Cesare" width= 240 class="immaginesinistra" align=left>
-		<h4> Adolescenza </h4>
-		<p class="testovita">Tommaso Colli passa l'adolescenza moltiplicando pani e pesci, prendendo insufficienze in scienze e cercando disperatamente qualcuno che gli anticipi un euro per il panino quotidiano. Nel tempo libero costruisce arche per salvare le specie animali dai diluvi del padre, oltre a condurre popoli attraverso i deserti, alla necessità anche aprendo le acque dei mari. Nel 50 a.C. riesce a unificare tutte le Gallie, vincendo contro Vercingetorige, costruendo il più grande impero fino ad allora conosciuto (immagine a lato).
-		</p> 
-	</div>
-	<div>
-		<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMVFhUXGRgVFxcXFxUXGhgYFxcXFxcXFxcYHSggGBolHRcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0lHSUtLS0tLS0tLS4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAPQAzgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwABBAUGB//EADkQAAIBAwIDBgQFAgUFAAAAAAABAgMRIQQxEkFRBWFxgZHwBiKhsRMywdHhQvEUI1JighYzQ3Ky/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACoRAAICAQQBAgUFAQAAAAAAAAABAhEDBBIhMUEiUTJxgbHwExVCYaGR/9oADAMBAAIRAxEAPwD5TfAdOndXJTiN2NH0SKcEDaw+UiIndwVt5Fxb3GxyVGJOAzk0PoY78yJ8ipYRIZMn1Y7Lt3l8LLiaKcbGUpUUuRLpMz1Ivm36mrVapJWOfV1LftM1xRk1ZMqJUT6i1Bgfjv3/AAMp6lXyvM3qSM+Q4YNdNAxpq10W52Oecr6LS9x0nZC4/UXPUgKqupCxyE2a7dQc7IR+Og4VMY3z/AbWhhqld7ItUksYGUJY8Rk4JZ9CbYV7CFSXJAV42C/EyKrSNI3YC6isKjC6HJ3IqduZquEAFGXIKoLpj2sGz45I7Fpl3KaLgJ0CI5WuEmUlnBaTIlRVl7hwjzKghkYGMvYvsZT62v4blamfCr+S73+wFaaiuJ+C7+5GOpNyd35LoGLFud+BSlQqcNnu8ti+AdUYpM7ekZgqgLcLDuNgTj6gAen1DjjkPWpT3x9UY/wyXJlji+R2aZr0AYqM7eBqhQTV1kl+nsmhaQ6nLzAhQbHKhYiUo9DQUJMlWbYyMOgao9UZbo3Zb4RjX1GTg8NmyFBPkaHFYx9hvMhKJnoaS+XtsNlpEu7xHOWOgqpO+92ZObKo5lHJpdIVp8bWHVJZSRvkbboUUvJmnuVBZGqndjY0rcgc0iaskFjYjfcRyDpmL92UA1gCU7K7eB9VnJ1NbieNl7uXihvdCboXWqOTu/LuKjUYNj1Pw78F1tRacvkg83f5mu5fudOXLjwxuTpFY8c8kqirZ51yQpS5WPrEPgrTwjZ01J9ZNtv9vIzaj4H08sKDj3xk19HdP0PN/d8O6qf59Tv/AGvLV2vz6HzIDJ7DtT4EqwzSmqi/0v5ZeuzfoeW1GnlTk4TjKMlyat/c7sWoxZfgdnFlwZMXxoVxC5DLdQYm5iBE1aWrwvu5iWgYyE0pKmB2IRTygnSujn0Kri7r06nYhPiSkttzhywlBlxpircNlYcvAppPcak/5MnIe0CC7g5UolJ53Du9ibZdAxpouVKXJPyLj9zTQq2VuY7YqPP0YPwNNOPXIenpYz6D4U1k6ZSsz6B01NZCrwCoWu8hyhz5GLuykc+Ucl4NHDkCVG/6FWn2Bz9fW/pXPf8AY59uRu19BqV3zX8HY+HOwVUtUntdRgv9T/qe2yX3R1qccWLcSouUlE6/wP8ACkXavXV+cIcn0k7/AGPpuijbGxztFTjGK7rJLysdWhFJHy+fUSzy3SPpI4I4YbYjqzjf5kYdTOLxHHgaXR4t9rMGpp4pXx67mFWVBpHNrUlFXZwu2tDTrwXGk97PZrpZ8j0k6DcXjw3+pxNTZXiy43GVxZWT1KmfOe2/hetSUqkE6lONm5JZipNpOSXK/M4VsH1nSam8vwOJpVISp+LlmPndfU+d9odnNTkkmmnK8elnn6H0Ok1TmqmfO6jFslwceTBsNnT+guUT0TnCjM7XY0vks3zf7/qcOnG256PsvTNQV+au/Pl76HPqmlAcew2s7YGqNxyhnIbil+3vY85s1Qhx7xbiHN5LpR5+7gNWCou3cMp+DCcc+7ASV3gVjoz0IYXJbmnhxt6mNYaTya3HCydTM12AsOy5hVG9iLGCVHixm2V0Il1ZGuhJRxkZbFwEhM6KkrPyZ6bs+ST09PKjGn3q8sJtL/k1/wAV0Mvwzoo1qyjLFk5eNvA68aU5a53/APHB2XS8trrF934s58+T0Sj4OnSxvLGjo1p11+XgjbNpyz6K7MVLtarf5o5usxkpLPVbrzCdPjhNSq1KdR24JRlOK723Dd779xp+HuxnGpFzquq+ru5PN8yeWtvM4EoKPNWev6t3Dfz4+x2+0KkqcHJu1le3Kx5fTdqVq7f4MMLHHN2UX3RWZeB2/i3/ADL008bHN7B7MdNJNuUN5xT4eJ8rtNNpdOeSYOKi2+/A8kZuuaVc0Fx1oq3Gm98OVnbulk5vaGre73+/Uyazsqcak3CdVrkpSdl0sm/M63Z/ZrqR4qlml1ve/dgtqK9V2TG2tq4fzs5M9RwyjNZa+ZX6rK8Mr6mP4jhF1Y16f5aiU7Z5rKf19D0Pa2kglhHClXvQti8Kjs+l03bwub6Z3yjh18NrTZxe19Dx01VX5l8ku+2zfl9jz0j3cNE/xo05RxUVt9ms3v4RkjznbfZcqTu1bNn3Pf7HrabNzsf0PMkvJz+z6Cc1fZZ/ZHoE+jOboaNlfrk6VGOTPUT3SHFUjVB4BdTlYpSAcb5OahhzjzBjDHQdF5Lkl5+7Csoytt46AKSRpqRSQqqvdmUuQQtwfD09+/ULjew6o/lESV7G12iehkljyGQjdW5gJWW+Sopq5LBsGdNJ+/uBfL6BOfUXUeVnmAI9V8JXhGrNWcpcNKPnltdyRs+HWlVqyb3aXXZN8/8A2PN6PtPh/Dja0Ytt5y201xfXY6nZeoSqSd1wyUXjrs/qcmeDqT/Ozv0Lj+tFfP7HqY0FaVtr7cl4DuyIWq32SuZ6FW0B/Y2uhFylPfpth7eR58lR7U40nSM/aD/zG3s9hujtJc7ro7HH7Y7c03E+J3a2t17guwe0vxKKnjiu4t+DsvpYJY5bbrgalGXoNmvo02/mctu5XI9Sox4UrL+BVZ3fEc3WarP7DrijVQhEx9vdpJQaW+x5TS6xwkm8pNScb2vZ3V+46HadLid7nLjBJ7nr6aEYwPB1s986PUrtCMptwi1UilUSf+q/HGyfK9seJq+ItJCrp41oXfHZpPdYvKL6ST8ntyPNxkouU83azz27z2Pwvp4uioTzGpFyT6S/qSvztbbqZTaj614OaWNLj3PEqDSymn0sw6Uzua/sThk3dtZteMk/HKS9DkUqatn9vQ1U4y6MKoKCJGDQ6FMNwJYUKtazt/YZCW67kwGmFBfmWACxcZ/qJ1P2Hfh77X7hc6dxoBbWLZZItZz/AGGrK7/dhLV3n35Fp2gNUIpoGqmXF4SGJJpABjazyEzp35o2VV6IwVpPwKE/YJyydjsOa/Gins0157/ocBSNem1jhOMlyafoKcd0WjTDPZNSPounpOXyrn9kV252QqtOSX545TW6XPyHdn1eJKUHhrD8TLrdBafHVr1e/gsorr8vP1PIXfsfQznv88HmNP8ABs5NcU1bm+avysej0PZsKMeCN7I4X+Gp8bcNVVu+f5c36Pc7lLTyUHetKTawmor1aNc85y4k/wDKMceOMPVD7h1tre+ZydVHD97HU1XycMeaik/HhycfX6lWsvdzLGm2bZMtI4naPM5S07cZd37o166pmwEHaO++D14R2wPBnPdM5qrScmrtpbfp9T6B2P8A9tJRc4Saku5vdb4s7nieztJKc2kr7/R7t9D02t1H4UYxpu0lZSa2doRjZ9/y3v8A7haqmlFGSb3WzZ2/XjHm2+jvfz6fc87Gf8jXUlN8U3dv2wqcUYQioKiuyU556DFW+gEqfMqKQxNFqd2Wlhipq3MOLvcokZDbvF1Ybcg7/YXCpjZggoGpBdQVn7kbdvUCe5pGgY/jsshfiYx/cVHKRfEttikSBWn/AGMtWOB9aL3uL37vUKoEhHD3Eg8midOyuKisrIJjo9V8Kdp2i6T5ZXg/5PU04KunHbDv/Fz5pQqODUkej7O+IXS+ZptPfqnb6rBw58Db3RPS02pW3ZM9R/03SgsTd++xinpFG/FO636HPqfFMJPcwa3tpSWHjzMY4cjfJ0yz4YR4dsd2trbSvf3zPN67Wq7tuBrNZKTMUqDfiehhwKHZ5+XPKfCEzqt5Nujj1QmGns0aIXRvkkmqRljhTtjdLKzkveQ0mY4KXGuHN977WH6nVRg+Fy5J7dTPbb4JfD5NlMOMN2zJQ1KnlO/vvHKabtzMJJpgmgovn9C+8uLWRc6mcEoGMcFuUo2v78RcaiD4sOz5lUKyJ8rlMFTKlO5SJbJdXxewKV3n0DpeFwa79X79ClwDBUk3tsXOVv1FRg7MupOy4eZohNEnK+7eMCljzLpvPkMUbrZ++QDLsZ5xyPt/IMmKwKi74DjtZ++8zVKkY7+i3ET126Stfne7/guOKc+kDnFHpO3vharSs4LjdouXDd7q6lHm4/ycGLmsWt5Hpfh/4ypKnChq41LU/lp1adnKMeSlF7pefhzO1PtDQVvy6mm97qtGVJ+UpJXZg558XpnG/wC0bL9HIrUqZ4OnB87miEPQ7vaNHR4cdXRXVR4p+iSTMf8Aiuz6cc6irVl0pUnBX8amPqG+c+ov/jHcI/yRinAKWlSjxTagl1/Xp9xOr+J4LGnoKH+6b4pfx6nA1OsnUd5yb+3kuRvh0uSXMuDHJql/E2antdp/5atfHE1/8p7eJzZPP1BnMHiPShijFcHM5t9jIVWndOzNK7Sn1T8kYGSKFLHGXaI3PwdvTdr8przX6pnQhaXzJ3Xc/ueYjE0abUuDusfr5czmyaWPceGWsr8nokvPqW7cLzfv8TmUe1VtJW8Mo36dp3kndPpnbuOKWOUfiRqpp9ARmxreegqMlnHMjiJotOx9KoMlNZTQmjmOHcGbdytqJYfHb9CpR3dilnkInPvZQzTZWFSbFupZXk7GDUa1vEcLn1LhilN8CckjbOvFYbv3GHUaqT7vD9xHEKbydkNPGPfJg8kpDVLmC2Bcid3Y6KIDsW2RlSZIAuQqTY6o9hUhiAyS5cioU+bAZFECYxIjQWNC0SKLkUpCBsOTsFOV7AqPqRLmBDIskhUlHMW0+4pNbEaChWdPSdqP+uKa6pZ8WuZ06MrpNO/gzy8W0aNJqpx22fJ/c5c2mTVx7N4ZPc79AOdURGo1shUqmXjnyOVI3ZolU37/ANjJWq2+xdWaMFepd42Xu5rix72RKSii6tdy38kCLTCcsHoJJKkYN2ypsFA8eSOQxJjIl08ZBsXysKxMu4M2HJYuACYFXwBJhSYMN/ftDESAfCFGJJzViWxi7oK+BW+5cp4AYurPLBpokINs0xhZWFYmDFlSk+WAuHIXCKyRCiNUOQUIrcCtVXIa5DsBvJaYuMb++pdimUjvQrL+PsDVn76g0bp+P0B1M+HL/M9vDqzzYxt0jrbpGWvUy0KuBOYCkejGO1UcsnbsaBUmU5YuKlkbESLDTyBYuAJjH3yHKWRKexcnkBDKrskBxFVWChB4LnIbBWAhHKZc9yqJDnUExAnMiYqKQaVuYDj3klIpiCx1N2GrIilC5oj0HtIbJwgVppLvJPUW73y/kxVJtshocU2E53wU0SBaKRZanyLg+pFEGQ2I7Tnwrifp3mCtVbbb3D1lfiljZYX6vzMtRmWHHtVvsvJK3/RUpAXAbI2bEUMchakSRIkspIZJloBluQhhOQdxO4bkMlknIKLyKlIZFfuOJLHpiqsg0sGWpK7KbFFckQ2ERcIjHuKypFhwplQiMbwMzbLSM1WvyQurW5IWkQ2Wo+WFcNIBbhwQii5PAMGXMi2GhB0xbGU3gGDAEHGRVQqmSTKG0ACyXImA6KbCiDYtEjQUmVcEuKAC2y74BkUxCLQ+k9zKaOK2CkTJF1qnIUkDOV2M08ebBsaVIYo2XewkiuK5TqchpUQ7Ycp2M9WtcXVq3Aj3ici4wrlhIK4KkE2SMkQoMBMKIAySYaYEpXt3fu3+pFIBUNVhV7FxdxcpAUkNi8lsGLLkUhsWwkgWEITJIliIuQDAYUGCyNgIpskmUmSTyIaLprPgFN2BpA1mPwFWykaL8jPTXMbB2BCkNUrIz1KhKkxMncTY4xLQwWpZGOQimSITeSASAVBphRFxYaAlojeSolNk4gGXB2Io3AuWmMpIZ/IUSiDXQMCTLiWQBMkeZJMsgFCmwbkIAiIpshAH5HRxERUeSEGwQymFVZCC8EvszNlxZCElhRROZZAEMYtyIQYINMtshBEgJjLEIAwWFBkIBUT/2Q==" alt="Cristoforo Colombo" width= 240 class="immaginesinistra" align=left>
-		<h4> Età adulta </h4>
-		<p class="testovita"> Il più grande avvenimento legato a Tommaso Colli avviene nel 1492, quando scopre l'America. Finanziato dalla regina Isabella, sopra tre velieri (Nina, Pinta, Santa Maria), parte alla ricerca di una rotta più veloce per raggiungere le Indie. Purtroppo prima di schiantarsi contro la barriera di ghiaccio e provare l'effetto pac-man, incontrò l'America, posta lì proprio dai terrapiattisti. Tommaso diede fin dall'inizio sfoggio delle sue capacità intellettive riconoscendo l'errore, ma sterminando comunque gli indigeni.
-		</p> 
-	</div>
+    <title>Tommaso Colli Fan-club</title>
+  </head>
+  <body>
+    <h1 class="font-italic">Tommaso Colli</h1>
+    <h3 class="font-italic">Un uomo, una leggenda, un eroe, un Dio, un Colli</h3>
+   
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html> 
+
+        <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item active">
+        <a class="nav-link" href=home.html>Homepage</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href=inno.html>Il Nostro Inno</a>
+      </li>
+      
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<br>
+
+
+
+
+<div class="card mb-3" style="max-width: 1000px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="https://i.pinimg.com/474x/95/c8/7c/95c87c38a6aab7b56f7b46036dbe7aa7.jpg" class="card-img" alt="Madonna e Colli">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Nascita</h5>
+        <p class="card-text">Al tempo di Erode, a Betlemme, in Giudea, nasce Tommaso Colli, primo di tre figli, dalla madre Maria e dallo Spirito Santo. Lo stesso giorno tre magi vennero a portare dei doni al piccolo: Corsini portò i panini, Farioli il consenso popolare e Montanari gli appunti di latino. La leggenda narra che il luogo della nascita fu una piccola stalla, riscaldata solo da una lince e un hovawart Salud. E' facile immaginare il significato di una nascita così povera, che preannunciava per contrarietà le ricchezze della sua futura vita.</p>
+        <p class="card-text"><small class="text-muted">A lato immagine di Colli con la madre</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card mb-3" style="max-width: 1000px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://www.correrenelverde.it/cultura/images/personaggi/giulio_cesare.JPG" class="card-img" alt="Cesare">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Adolescenza</h5>
+        <p class="card-text">Tommaso Colli passa l'adolescenza moltiplicando pani e pesci, prendendo insufficienze in scienze e cercando disperatamente qualcuno che gli anticipi un euro per il panino quotidiano. Nel tempo libero costruisce arche per salvare le specie animali dai diluvi del padre, oltre a condurre popoli attraverso i deserti, alla necessità anche aprendo le acque dei mari. Nel 50 a.C. riesce a unificare tutte le Gallie, vincendo contro Vercingetorige, costruendo il più grande impero fino ad allora conosciuto.</p>
+        <p class="card-text"><small class="text-muted">A lato immagine di Colli dopo aver conquistato le Gallie</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="card mb-3" style="max-width: 1000px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="https://www.nanopress.it/wp-content/uploads/2017/10/cristoforo-colombo.jpg" class="card-img" alt="Colombo">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Età adulta</h5>
+        <p class="card-text">Il più grande avvenimento legato a Tommaso Colli avviene nel 1492, quando scopre l'America. Finanziato dalla regina Isabella, sopra tre velieri (Nina, Pinta, Santa Maria), parte alla ricerca di una rotta più veloce per raggiungere le Indie. Purtroppo prima di schiantarsi contro la barriera di ghiaccio e provare l'effetto pac-man, incontrò l'America, posta lì proprio dai terrapiattisti. Tommaso diede fin dall'inizio sfoggio delle sue capacità intellettive riconoscendo l'errore, ma sterminando comunque gli indigeni.</p>
+        <p class="card-text"><small class="text-muted">A lato immagine di Colli dopo aver scoperto l'America</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
